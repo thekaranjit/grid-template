@@ -5,8 +5,13 @@
   /* grid-template-columns: 100px 200px 300px;
   grid-template-rows: 100px 200px 300px;
   grid-template: 100px 200px 300px / 25% 25% 25%; For Resonsivness */
-  grid-template: 100px 200px 300px / 1fr 3fr 1fr;   /* For Resonsivness */
-  /* gred-gap: 10px; */
+  grid-template: 100px 200px 300px /repeat(3,1fr);   /* For Resonsivness */
+  grid-gap: 10px;
+
+grid-template-areas: "A C B"
+                      "D D F"
+                      "G H I"
+
 
 
 }
@@ -14,4 +19,45 @@
 .box{
   background-color: orange;
   border: 1px solid blue;
+
+  }
+
+
+.box1{
+    grid-area: A;
+  }
+
+.box2{
+  grid-area: B;
+  }
+
+.box4{
+  grid-area: C;
+  }
+
+.box4{
+  grid-area: D;
+  }
+
+
+.box5{
+  grid-area: E;
+  }
+
+
+.box6{
+  grid-area: F;
+  }
+
+.box7{
+  grid-area: G;
+  }
+
+
+.box8{
+  grid-area: H;
+  }
+
+.box9{
+  grid-area: I;
   }
